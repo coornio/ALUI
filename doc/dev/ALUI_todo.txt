@@ -1,0 +1,37 @@
+
+Dialog:
+	Private/password server connect
+
+
+Server Browser:
+	Better mastermode icons
+	Redo filters section to fit server desc and map search filters
+	Ponder whether to bother about favorites since nothing is being done about it
+
+
+Options:
+	Scratch the whole thing and assemble a list of viable options
+	Think of proper categorising for the various options
+	Possible add advanced view
+
+
+Controls:
+	List all controls or allow the user to view info on each key?
+		For the former, too much space is required, scroll area not very intuitive
+			Entries require more explanation due to increased complexity
+		For the latter, maybe color code the keys to make searching faster?
+
+
+Screenshot:
+	Toggle screenshot mode with F12
+	Automatically hide UI and HUD, restore afterwards
+	Lag compensation
+
+
+Scoreboard:
+	Port that thing to a more standard UI look that matches the rest
+	Fix broken stuff, namely almost everything which doesn't show up
+	Less text size disparity and variables
+	Recycle more code and shorten operations where possible
+
+
