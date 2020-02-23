@@ -2914,17 +2914,8 @@ void rendertexturepanel(int w, int h)
     }
 }
 
-int getselface()
-{
-    return (!editmode || enthover || haveselent()) ? -1 : sel.orient;
-}
-ICOMMAND(getselface, "", (), intret(getselface()));
-
-int getselentface()
-{
-    return (!editmode || (!haveselent() && !enthover)) ? -1 : entorient;
-}
-ICOMMAND(getselentface, "", (), intret(getselentface()));
+ICOMMAND(getselface, "", (), intret(enthover >= 0 ? -1 : sel.orient));
+ICOMMAND(getselentface, "", (), intret(enthover >= 0 ? entorient : -1));
 
 #define EDITSTAT(name, type, val) \
     ICOMMAND(editstat##name, "", (), \
