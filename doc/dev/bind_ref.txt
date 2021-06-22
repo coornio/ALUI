@@ -1,0 +1,160 @@
+NORMAL BINDS (non-edit, non-spec)
+
+F1  : placeholder UI for admin control (kick, spec, and so on)
+F5  : if map has no name, brings up a dialog to write one and save.
+      if the map HAS a name, it will save the map, unless you hold LCTRL to bring up the name dialog.
+F6  : map list UI
+F9  : toggles third person view
+F11 : toggles HUD console
+F12 : takes screenshot
+
+ESC : close top UI, or toggle main menu display
+TAB : will shortcut to server browser if main menu is up, hold ingame for scoreboard
+LSHIFT : crouch key
+SPACE  : jump, duh
+PAUSE  : pauses, duh again
+PG UP  : add bot, unless HUD console is on in which case scroll up
+PG DN  : same as above, except removes bot and scrolls down
+ARROW KEYS : movement
+`  : your standard command line
+[  : will toggle showwaypoints
+]  : will toggle dropwaypoints
+/  : same as \
+1  : weapon 1
+2  : weapon 2
+WASD : movement again
+E : does nothing if the mode is not edit, but if it is, it will enter editmode
+    if you're holding LCTRL when pressing E, you will teleport to where you're looking
+F : melee attack 
+J : taunt anim 
+P : toggles postfx HUD display
+Q : if mode is edit, toggles follow script
+R : drops the flag, but if LCTRL and LSHIFT are held, it will toggle recording session
+T : chat prompt
+Y : team chat prompt
+Z : if you hold LCTRL, it will repeat the last message you typed (normal or command)
+
+
+
+SPECTATOR BINDS
+
+F1-F12 : same as before. F9 toggles between third person 2 instead.
+
+ESC : same as before
+TAB : same as before
+SPACE : toggles follow mode
+PAUSE : same as before
+PG UP : same as before
+PG DN : same as before
+ARROW KEYS: same as before
+` : same as before
+[ : same as before
+] : same as before
+/ : same as before
+WASD : same as before
+K : if mode is edit, remips
+L : if mode is edit, it will calclight/recalc to smooth lightmaps
+    if LCTRL is held though, it will toggle fullbright mode
+P : same as before
+R : same as before
+T : same as before
+Y : same as before
+Z : same as before
+
+
+
+EDITMODE BINDS
+
+F1 : same before
+F2 : show texture browser HUD
+F3 : show mapmodel browser HUD
+F4 : show material HUD
+F5 : same as before
+F6 : same as before
+F7 : show environment settings HUD (basically blank atm)
+F8 : show geom prefab HUD 
+F9 : same as before
+F11: same as before
+F12: same as before
+
+ESC: same as before
+TAB: same as before
+LSHIFT : editcut (just like in sauer)
+LCTRL  : will deselect entities if any are selected, will select all in selection otherwise
+SPACE  : cancels entire selection (ents+geom)
+RCTRL  : multiplier for texture commands on arrow keys
+PAUSE  : same before
+PG UP : if full console HUD is up, scrolls up
+        if not, check if selection contains entities and teleport through them (+1)
+        if not, upscale the textures of your selection by x2
+PG DN : if full console HUD is up, scrolls down
+        if not, check if selection contains entities and teleport through them (-1)
+        if not, downscale the textures of your selection by x0.5
+DELETE: deletes selection (ents+geom)
+
+ARROW KEYS (UP/LEFT/DOWN/RIGHT) :
+    movement in the respective directions, BUT:
+    if you have NO ents selected AND the LCTRL is pressed, it will voffset in the appropriate direction
+    if you're also holding down LSHIFT, it will vscroll instead
+
+` : same as before
+[ : same as before
+] : same as before
+/ : same as before
+\ : toggles nompedit, no reason to touch it though
+- : toggles outlines
+= : toggles wireframe
+
+KP0-KP5 : toggles blendpaint modes like in sauer
+
+0-9 : if material HUD is displayed, apply corresponding material to selection, otherwise:
+      6 toggles allfaces
+      7 toggles entselsnap
+      8 toggles entediting
+      9 toggles fullbright
+      in addition, 7,8,9 will toggle through all 4 glass/water/lava materials respectively
+
+WASD : same as before
+B : if LCTRL is held, toggles blendpaint mode
+H : if LCTRL is held, toggles heightmap mode
+E : toggle editmode, teleports to cursor instead if LCTRL is held
+C : copy selection (ents+geom)
+V : paste selection (ents+geom)
+X : flip selection (ents+geom)
+I : redo change
+U : undo change
+P : same as before
+R : same as before 
+K : remip
+L : if LCTRL is held, calclight/recalc
+M : if LCTRL is held, toggle showmat, otherwise hold to display material HUD if selection has no ents
+N : select all entities in selection
+T : same as before
+Y : same as before
+Z : same as before 
+
+
+
+MOUSE SCROLL MECHANICS
+
+    IN EDITMODE:
+        if follow mode is on, change which player you're following
+        if LCTRL is held and selection containts ents, teleport through them
+        if selection contains ents, and any of keys 1-5 are held, change corresponding entity property value
+        if G is held, adjust grid power
+        if R is held:
+            if blendpaint mode is on, rotate the current brush, otherwise rotate selection
+        if Q is held, push corner
+        if F is held, push face
+        if Y is held, change texture from MRU
+        if Z is held, change floatspeed
+        if heightmap mode is on and H is held, change heightmap brush
+        if blendpaint mode is on:
+            if B is held, change blendpaint behavior, otherwise change blendmap brush
+        if none of the above apply, push/pull cubes
+    MAIN MENU
+        nothing yet
+    SPECTATING
+        if thirdperson, adjust spectating distance, otherwise change who you follow
+    GAMEPLAY
+        change weapon
